@@ -1,0 +1,131 @@
+.main{
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../../assets/images/caree.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.main-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-linear);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+  .box {
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    /* border: 1px solid white; */
+    /* border-left: 1px solid #a3a3a359; */
+  }
+  
+  .logo {
+    width: 70px;
+    transition: all 1s ease-in-out; /* Animation fluide */
+    padding: 0 15px;
+  }
+  
+  .logo > img {
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease-in-out; /* Animation fluide */
+  }
+
+  
+  ul {
+    padding: 10px 20px;
+  }
+  
+  ul > li {
+    color: var(--text-color);
+    list-style: none;
+    font-size: 18px;
+    font-family: "EB Garamond", serif;
+    padding: 3px 0;
+  }
+  
+  ul > li > span {
+    color: grey;
+  }
+  
+  ul > li > a {
+    text-decoration: none;
+    color: rgb(52, 52, 52);
+  }
+  
+  .btns {
+    padding: 20px 20px;
+    display: flex;
+    font-family: "EB Garamond", serif;
+  }
+  
+  .btns > a, .btns > button {
+    text-decoration: none;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #portfolio-btn {
+    padding: 7px 15px;
+    background: var(--text-color);
+    border-radius: 20px;
+    color: var(--background-color);
+    font-weight: 700;
+    border: none;
+    margin-right: 5px;
+  }
+  
+  #gihub {
+    border: 0.5px solid rgba(255, 255, 255, 0.26);
+    font-weight: 700;
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.26);
+  }
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+.zoom-center {
+    transform: translateX(250%) scale(5) rotate(360deg) translateY(-10%) ; 
+    transition: all 2s ease-in-out;
+}
+
+.media{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+.media > li > a {
+  border: 0.5px solid var(--color-tran);
+  color: var(--color-tran);
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+.media > li > a:hover {
+  border: 0.5px solid var(--text-color);
+  color: var(--text-color);
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}

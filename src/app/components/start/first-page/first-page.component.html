@@ -1,0 +1,27 @@
+<div class="main">
+    <div class="main-wrapper" [class.disabled]="isClicked">
+        <div class="box">
+        <div class="logo" [class.zoom-center]="isClicked">
+            <img [src]="imageSrc" alt="Theme Image">
+        </div>
+
+        <ul *ngIf="!isClicked"> 
+            <li>1 - <span>Hi</span>, Welcome to my portfolio </li>
+            <li>2 - <span>Second</span>, I'm here for you! This is my <a href="#">Linkedin</a></li>
+        </ul>
+
+        <div class="btns" *ngIf="!isClicked">
+            <button id='portfolio-btn' (click)="onProfileClick()">My Portfolio</button>
+            <a href="#" id='gihub'>My Github</a>
+            <app-mood></app-mood>
+        </div>
+
+        <ul class="media" *ngIf="!isClicked">
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Twiter</a></li>
+            <li><a href="">Discord</a></li>
+        </ul>
+    </div>
+    </div>
+</div>

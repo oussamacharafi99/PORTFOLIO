@@ -1,0 +1,13 @@
+<form>
+    <input
+      id="dark-mode"
+      class="toggle"
+      type="checkbox"
+      [checked]="isDarkMode"
+      (change)="toggleTheme()"
+    />
+    <label for="dark-mode" class="toggle-label">
+      <img id="icon" src="../../../assets/icons/brightness-and-contrast.png" alt="">
+      X
+    </label>
+</form>

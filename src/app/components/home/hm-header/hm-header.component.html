@@ -1,0 +1,16 @@
+<div class="logo">
+    <img [src]='imagesrc' alt="Logo">
+  </div>
+  
+  <div class="barres" (click)="toggleMenu()">
+    <div class="hamburger" [class.active]="isMenuOpen"></div>
+  </div>
+  
+  <div class="menu" [class.active]="isMenuOpen">
+    <ul>
+      <li><a href="#" (click)="closeMenu()">Accueil</a></li>
+      <li><a href="#" (click)="closeMenu()">Notre Équipe</a></li>
+      <li><a href="#" (click)="closeMenu()">Nos Projets</a></li>
+      <li><a href="#" (click)="closeMenu()">Contact</a></li>
+    </ul>
+</div>
