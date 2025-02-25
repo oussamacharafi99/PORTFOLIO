@@ -9,6 +9,7 @@ import { HmHomeComponent } from './components/home/hm-home/hm-home.component';
 import { HmHeroComponent } from './components/home/hm-hero/hm-hero.component';
 import { HmHeaderComponent } from './components/home/hm-header/hm-header.component';
 import { HmWrapperComponent } from './components/home/hm-wrapper/hm-wrapper.component';
+import { HmMenuComponent } from './components/home/hm-menu/hm-menu.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { HmWrapperComponent } from './components/home/hm-wrapper/hm-wrapper.comp
     HmHeroComponent,
     HmHeaderComponent,
     HmWrapperComponent,
+    HmMenuComponent,
   ],
   imports: [
     BrowserModule,

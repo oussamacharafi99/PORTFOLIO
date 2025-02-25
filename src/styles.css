@@ -24,6 +24,7 @@
     --color-update: #336b9c;
     --bg-linear: linear-gradient(120deg, rgba(0, 0, 0, 0.322), black);
     --color-tran : #ffffff5e;
+    --text-tran:#ffffff78;
   }
   ::-webkit-scrollbar {
     width: 3px;
@@ -61,6 +62,7 @@
     --tb-color-hover:#d8e0e7;
     --bg-linear: linear-gradient(120deg, rgba(255, 255, 255, 0.322), rgb(255, 255, 255));
     --color-tran : #0000005e;
+    --text-tran:#0000004c;
   }
 
   body {
