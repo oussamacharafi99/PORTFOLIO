@@ -24,3 +24,7 @@
   .dark-theme .toggle-label i {
     color: var(--dark-text-color);
   }
+  img{
+    background: white;
+    border-radius: 100%;
+  }

@@ -30,32 +30,147 @@
 
 
 .cader {
-    width: 60%;
+    width: 70%;
     height: 80%;
-    background: linear-gradient(90deg, rgba(158, 158, 158, 0.209), rgba(0, 0, 0, 0.188));
+    background: var(--bg-card);
     backdrop-filter: blur(5px);
     border: 2px solid rgba(128, 128, 128, 0.26);
     margin: 0 auto;
     border-radius: 10px;
     /* Transformation initiale */
-    transform: perspective(500px) rotateX(0deg) rotateY(0deg) skewX(0deg) skewY(0deg);
-    /* transform: perspective(500px) rotateX(10deg) rotateY(10deg) skewX(10deg) skewY(5deg); */
+    /* transform: perspective(500px) rotateX(0deg) rotateY(0deg) skewX(0deg) skewY(0deg); */
+    transform: perspective(500px) rotateX(10deg) rotateY(10deg) skewX(10deg) skewY(5deg);
     transform-style: preserve-3d;
     transition: transform 0.3s ease-in-out;
     padding: 15px;
     display: flex;
     justify-content: space-between;
+    opacity: 0.5;
+    transition: .3s;
 }
 
 /* Effet au survol */
 .cader:hover {
     /* Transformation initiale */
     transform: perspective(500px) rotateX(0deg) rotateY(0deg) skewX(0deg) skewY(0deg);
+    
+    /* Bordure avec effet gradient */
+    border: 2px solid transparent; /* Transparent pour éviter les coupures */
+    border-radius: 15px; /* Ajuste selon ton besoin */
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+    background-image: var(--bg-card-im);
+    
+    /* Autres styles */
+    margin: 0 auto;
+    opacity: 1;
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+    color: var(--text-color);
 }
+
 
 .card-left, .card-right{
     width: 50%;
     height: 100%;
+    padding: 10px;
+    background-image: url("../../../../assets/images/caree.svg");
+}
+.card-left-img{
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    border:1px solid rgba(117, 117, 117, 0.188);
+    background: linear-gradient(90deg, rgba(158, 158, 158, 0.209), rgba(0, 0, 0, 0.188));
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+}
+.card-left-img > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: .4s;
+}
+.card-left-img > img:not(:hover){
+    filter: grayscale(100%);
+}
+.card-right > h2{
+    padding: 10px;
+    font-size: 14px;
+    color: var(--text-color);
+    background: linear-gradient(90deg, rgba(158, 158, 158, 0.209), rgba(0, 0, 0, 0.188));
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+.card-right > h2 > span{
+    border-radius: 20px;
+    border: 1px solid grey;
+    padding: 5px 20px;
+    margin-right: 10px;
+}
+.info{
+    padding: 20px 0 0 0;
+}
+.info > p{
+    font-size: 12px;
+    padding: 5px 0;
+}
+
+.cv{
+    width: 70%;
+    padding: 10px 0;
 }
 
 
+.cv > a {
+    padding: 10px 20px;
+    font-size: 14px;
+    background: linear-gradient(90deg, rgba(158, 158, 158, 0.209), rgba(0, 0, 0, 0.188));
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    cursor: pointer;
+    transition: .5s;
+}
+.cv > a:hover{
+    transform: translateY(-10px);
+}
+.cv > a > img {
+    width: 20px;
+    margin-left: 10px;
+    transition: .4s;
+}
+.cv > a > img:hover{
+    transform: scale(1.1);
+}
+.media{
+    display: flex;
+}
+.media > ul {
+    display: grid;
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+}
+
+.media > ul > li {
+    list-style: none;
+    padding: 2px;
+}
+.media > ul > li > a {
+    background: linear-gradient(90deg, rgba(219, 219, 219, 0.363), rgba(0, 0, 0, 0.188));
+    border-radius: 20px;
+    padding: 3px 5px;
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+}
+ul > li > a > img{
+    width: 20px !important;
+    height: 20px !important;
+    background: white;
+    border-radius: 100%;
+    margin-right: 10px;
+}

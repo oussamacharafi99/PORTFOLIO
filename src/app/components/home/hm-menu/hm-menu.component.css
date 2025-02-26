@@ -7,25 +7,25 @@
 }
 ul{
     width: 350px;
-    padding: 15px;
-    background: rgba(128, 128, 128, 0.291);
+    padding:10px 15px;
+    background: rgba(40, 40, 40, 0.705);
     backdrop-filter: blur(10px);
     border: 0.5px solid #ffffff25;
     margin: 0 auto;
     position: fixed;
-    bottom: 40px;
+    top: 40px;
     border-radius: 20px;
-    z-index: 999;
+    z-index: 9999;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 ul > li > a{
-    color: var(--text-tran);
+    color:#ffffff78;
     font-size: 12px;
     text-decoration: none;
 }
 
 ul > li > a:hover{
-    color: var(--text-color);
+    color: #fff;
 }

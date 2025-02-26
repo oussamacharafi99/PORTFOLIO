@@ -1,11 +1,12 @@
   .anima-container {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
+
   }
   
   .home_title {
-    margin: 120px 0 0;
+    margin: 100px 0 0;
     overflow: hidden;
     padding: 13vw 0 0;
     width: 100vw;
@@ -20,18 +21,20 @@
   }
   
   .home_title li h2 {
-    font-size: 10.7vw;
+    font-size: 9.7vw;
     margin: 0;
     padding: 0;
     line-height: 8.2vw;
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 800;
     letter-spacing: -0.45vw;
     width: 200%;
     overflow: hidden;
     position: relative;
     z-index: 1;
     text-align: center;
+    z-index: 999;
+    font-family: "Geist Mono", monospace !important;
   }
   
   .home_title li h2 span {
